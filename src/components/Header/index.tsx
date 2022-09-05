@@ -30,7 +30,7 @@ const Header: React.FC<HeaderType> = ({ onClick }) => {
     >
       <Container maxWidth="lg">
         <Grid container>
-          <Grid item xs={8}>
+          <Grid item xs={12} md={8}>
             <Box
               display="flex"
               justifyContent="space-between"
@@ -57,8 +57,15 @@ const Header: React.FC<HeaderType> = ({ onClick }) => {
             </Box>
           </Grid>
 
-          <Grid item xs={4}>
-            <Box display="flex" justifyContent="flex-end" alignItems="center">
+          <Grid item xs={12} md={4}>
+            <Box
+              sx={{
+                py: 2,
+                justifyContent: { xs: 'center', md: 'flex-end' }
+              }}
+              display="flex"
+              alignItems="center"
+            >
               <Typography variant="body1" color="grey.500">
                 Today is the {currentDate}th of {MONTH[currentMonth]}
               </Typography>

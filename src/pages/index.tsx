@@ -49,6 +49,7 @@ const Home: React.FC<HomeProps> = ({ animes, total, page }) => {
               count={total}
               size="large"
               page={page}
+              siblingCount={0}
               onChange={(event, value) => router.push(`?page=${value}`)}
             />
           </Box>

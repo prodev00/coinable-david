@@ -35,7 +35,7 @@ const SearchModal: React.FC<SearchModalType> = ({ onClose }) => {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 600
+          width: { xs: 400, md: 600 }
         }}
       >
         <Box display="flex" justifyContent="flex-end">
